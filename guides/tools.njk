@@ -1,0 +1,35 @@
+---
+tags: guides
+title: Tools
+layout: default.njk
+---
+
+<h2>Tools for CI/CD</h2>
+
+<div class="article-list">
+    {%- for article in collections.tools_cicd -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>
+
+<h2>Tools for Applications</h2>
+
+<div class="article-list">
+    {%- for article in collections.tools_applications -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>
+
+<h2>Tools for Infrastructure as Code</h2>
+
+<div class="article-list">
+    {%- for article in collections.tools_iac -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>

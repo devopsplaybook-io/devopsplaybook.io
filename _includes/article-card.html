@@ -1,4 +1,4 @@
-<div class="card">
+<article>
   <a href="{{ cardUrl }}">
     {% if cardImage %}
     <div
@@ -12,9 +12,7 @@
     ></div>
     {% endif %}
 
-    <div class="card-body">
-      <h3>{{ cardTitle }}</h3>
-      <span>{{ cardSummary }}</span>
-    </div>
+    <h3>{{ cardTitle }}</h3>
+    <span>{{ cardSummary }}</span>
   </a>
-</div>
+</article>

@@ -1,7 +1,9 @@
 ---
-tags: tool
+tags:
+  - tools
+  - tools_applications
 title: Docker
-layout: article.njk
+layout: default.njk
 ---
 
 Docker is a application virtualization tool.

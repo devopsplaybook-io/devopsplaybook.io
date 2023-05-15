@@ -1,20 +1,16 @@
-{% set titleKey = "Home" %}
-{% set hasBanner = true %}
+---
+title: Home
+layout: home.njk
+---
 
-{% extends "default.njk" %}
+<div class="article-list">
 
-{% block content %}
-
-    <div>
-        <a href="/tools/">
-            <button class="button">Tools</button>
-        </a>
-    </div>
-
-    <div>
-        <a href="/practices/">
-            <button class="button">Practices</button>
-        </a>
-    </div>
-
-{% endblock %}
+    {%- for article in collections.guides -%}
+    
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    
+    {% endfor %}
+    
+</div>

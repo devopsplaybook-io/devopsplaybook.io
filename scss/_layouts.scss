@@ -1,4 +1,4 @@
-@use '_vars.scss';
+@use "_vars.scss";
 
 body {
   padding: 0px;
@@ -37,36 +37,10 @@ body {
   grid-gap: vars.$margin-standard;
 }
 
-// Contact
+// Cards
 
-.contact-page {
+.article-list {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: vars.$margin-standard;
-}
-
-// Content
-
-.content-md img {
-  max-width: 100%;
-  width: 800px;
-}
-
-.content-md h1 {
-  padding-top: vars.$margin-standard;
-  padding-bottom: vars.$margin-small;
-}
-
-.content-md ul {
-  list-style-type: circle;
-  margin-left: vars.$margin-large;
-}
-
-.content-md li {
-  margin-top: vars.$margin-small;
-}
-
-.content-fav h1 {
-  padding-top: vars.$margin-large;
-  padding-bottom: vars.$margin-standard;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
 }

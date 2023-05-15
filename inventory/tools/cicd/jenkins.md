@@ -1,7 +1,9 @@
 ---
-tags: tool
+tags:
+  - tools
+  - tools_cicd
 title: Jenkins
-layout: article.njk
+layout: default.njk
 ---
 
 Jenkins is an automation tool

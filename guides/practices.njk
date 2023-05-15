@@ -1,0 +1,26 @@
+---
+tags: guides
+title: Practices
+layout: default.njk
+---
+
+<h2>Practices for CI/CD</h2>
+
+<div class="article-list">
+    {%- for article in collections.practices_cicd -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>
+
+
+<h2>Practices for Source Control Management</h2>
+
+<div class="article-list">
+    {%- for article in collections.practices_scm -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>

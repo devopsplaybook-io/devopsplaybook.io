@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options));
   eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("media");
+  eleventyConfig.addPassthroughCopy("medias");
   eleventyConfig.addPassthroughCopy("sw.js");
   return {
     passthroughFileCopy: true,
