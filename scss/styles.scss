@@ -1,0 +1,35 @@
+@use "_vars.scss";
+@use "_reset.scss";
+@use "_fonts.scss";
+@use "_layouts.scss";
+@use "_components.scss";
+@use "_responsive.scss";
+
+// Navigation
+
+.navigation {
+  background-color: vars.$color-primary;
+}
+
+.navigation a:any-link {
+  color: #eee;
+  text-decoration: none;
+}
+
+.navigation-brand {
+  padding: vars.$margin-standard 0em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navigation-brand a:any-link {
+  font-size: 1.6em;
+}
+
+// Contaxt Page
+
+.contact-page a:any-link {
+  color: vars.$color-primary;
+  text-decoration: none;
+  font-weight: bold;
+}

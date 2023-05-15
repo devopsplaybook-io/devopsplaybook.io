@@ -1,0 +1,43 @@
+@use '_vars.scss';
+
+@media only screen and (max-width: 600px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-page {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact-page {
+    grid-template-columns: auto auto;
+    grid-gap: vars.$margin-standard;
+  }
+}
+
+@media only screen and (min-width: 1401px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .contact-page {
+    grid-template-columns: auto auto;
+    grid-gap: vars.$margin-standard;
+  }
+}

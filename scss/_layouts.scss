@@ -1,0 +1,72 @@
+@use '_vars.scss';
+
+body {
+  padding: 0px;
+  padding-bottom: vars.$margin-standard;
+}
+
+.page-content {
+  padding: vars.$margin-standard;
+  border-bottom: 3px dashed vars.$color-primary;
+}
+
+.page-footer {
+  text-align: right;
+  opacity: 0.5;
+  padding: vars.$margin-standard;
+}
+.page-footer img {
+  height: 0.9em;
+  margin-right: 0.3em;
+}
+.page-footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+// Navigation
+
+.navigation {
+  background-color: #218c8c;
+  padding: vars.$margin-standard;
+}
+
+.navigation-menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: vars.$margin-standard;
+}
+
+// Contact
+
+.contact-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: vars.$margin-standard;
+}
+
+// Content
+
+.content-md img {
+  max-width: 100%;
+  width: 800px;
+}
+
+.content-md h1 {
+  padding-top: vars.$margin-standard;
+  padding-bottom: vars.$margin-small;
+}
+
+.content-md ul {
+  list-style-type: circle;
+  margin-left: vars.$margin-large;
+}
+
+.content-md li {
+  margin-top: vars.$margin-small;
+}
+
+.content-fav h1 {
+  padding-top: vars.$margin-large;
+  padding-bottom: vars.$margin-standard;
+}

@@ -1,0 +1,20 @@
+<div class="card">
+  <a href="{{ cardUrl }}">
+    {% if cardImage %}
+    <div
+      class="card-image"
+      style="height: 14em;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 100%;
+              background-image: url('{{ cardImage }}');"
+    ></div>
+    {% endif %}
+
+    <div class="card-body">
+      <h3>{{ cardTitle }}</h3>
+      <span>{{ cardSummary }}</span>
+    </div>
+  </a>
+</div>
