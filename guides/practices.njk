@@ -4,16 +4,25 @@ title: Practices
 layout: default.njk
 ---
 
-<h2>Practices for CI/CD</h2>
+<h2>Practices for Methodologies</h2>
 
 <div class="article-list">
-    {%- for article in collections.practices_cicd -%}
+    {%- for article in collections.practices_methodology -%}
         {% set cardUrl = article.url %}
         {% set cardTitle = article.data.title %}
         {% include "article-card.html" %}
     {% endfor %}
 </div>
 
+<h2>Practices for Architecture</h2>
+
+<div class="article-list">
+    {%- for article in collections.practices_architecture -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>
 
 <h2>Practices for Source Control Management</h2>
 
@@ -24,3 +33,25 @@ layout: default.njk
         {% include "article-card.html" %}
     {% endfor %}
 </div>
+
+<h2>Practices for CI/CD</h2>
+
+<div class="article-list">
+    {%- for article in collections.practices_cicd -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>
+
+<h2>Practices for Security</h2>
+
+<div class="article-list">
+    {%- for article in collections.practices_security -%}
+        {% set cardUrl = article.url %}
+        {% set cardTitle = article.data.title %}
+        {% include "article-card.html" %}
+    {% endfor %}
+</div>
+
+

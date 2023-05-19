@@ -6,7 +6,7 @@ title: Trunk-Based Development
 layout: default.njk
 ---
 
-## Principle
+## Principles
 
 Trunk-based development is a version control management practice where developers merge small, frequent updates to a core “trunk” or main branch.
 

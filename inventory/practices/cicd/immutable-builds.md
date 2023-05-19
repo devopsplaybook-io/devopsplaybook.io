@@ -6,7 +6,11 @@ title: Immutable Builds
 layout: default.njk
 ---
 
-Work in progress...
+## Principles
+
+Immutable builds, also known as immutable artifacts or immutable binaries, refer to the concept of creating software artifacts that are unchangeable once they are built or deployed. In an immutable build approach, the build process generates a final artifact that remains unchanged throughout its lifecycle, from development to testing, deployment, and production.
+
+The core principle of immutable builds is to treat the built artifact as a fixed and immutable entity, avoiding any modifications or updates to the artifact after it is created. This approach contrasts with traditional build practices where artifacts may be modified or patched directly in production.
 
 ```mermaid
   graph LR

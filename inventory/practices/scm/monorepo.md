@@ -6,7 +6,7 @@ title: Monorepo
 layout: default.njk
 ---
 
-## Principle
+## Principles
 
 A monorepo is a version control repository that contains multiple projects, components, or services within a single codebase. It consolidates the code for all related software entities, allowing for shared code, dependencies, and tooling across different projects or components.
 
